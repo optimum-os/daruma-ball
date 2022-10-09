@@ -1,8 +1,12 @@
+import { Box } from "@mui/material";
+import DarumaBall from "./components/DarumaBall"
 
 function ListDarumaPage() {
   return (
-    <div>ListDarumaPage</div>
+    <Box sx={{ margin: '10px', width: '100%', minHeight: '100vh'}}>
+      <DarumaBall />
+    </Box>
   )
 }
 
-export default ListDarumaPage
+export default ListDarumaPage;
