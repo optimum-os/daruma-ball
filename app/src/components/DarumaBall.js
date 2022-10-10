@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Ball = styled.div`
   background-color: #ff5252;
-  width: 160px;
+  width: 170px;
   height: 200px;
   border-radius: 100% / 80% 80% 120% 120%;
   position: relative;
