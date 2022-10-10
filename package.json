@@ -6,9 +6,9 @@
   "main": "src/index.js",
   "homepage": "./",
   "scripts": {
-    "start": "concurrently -k 'cross-env BROWSER=NONE npm run start --prefix ./app' 'npm run electron:start'",
+    "start": "concurrently -k 'cross-env BROWSER=NONE npm run start --prefix ./app' 'npm run electron-wait:start'",
     "electron:start": "electron-forge start",
-    "electron-wait:start": "wait-on tcp:3000 && electron-forge start",
+    "electron-wait:start": "wait-on -v --delay 3000 http://127.0.0.1:3000/ && electron-forge start",
     "package": "npm run build:renderer --prefix ./app && electron-forge package",
     "make": "npm run build:renderer --prefix ./app && electron-forge make",
     "publish": "electron-forge publish",
