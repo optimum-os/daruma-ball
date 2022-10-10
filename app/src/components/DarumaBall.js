@@ -150,17 +150,17 @@ const KanjiMark = styled.p`
   font-size: 2.3rem;
 `;
 
-function DarumaBall() {
+function DarumaBall({activeLeftPupil = false, activeRightPupil = false, border = false}) {
   return (
     <Ball>
       <Face top='10%' left='8%'>
         <EyeBrow top='12%' left='20%' rotation='110' />
         <EyeBrow top='12%' right='20%' rotation='65'  />
-        <Eye top='35%' left='15%'>
-          <Pupil active={true}/>
+        <Eye top='35%' left='15%' border={border}>
+          <Pupil active={activeLeftPupil}/>
         </Eye>
-        <Eye top='35%' right='15%'>
-          <Pupil active={true}/>
+        <Eye top='35%' right='15%' border={border}>
+          <Pupil active={activeRightPupil}/>
         </Eye>
         <Nose />
         <Mustache top='65%' left='9.5%' right='9.5%' />

@@ -4,7 +4,7 @@ import DarumaBall from "./components/DarumaBall"
 function ListDarumaPage() {
   return (
     <Box sx={{ margin: '10px', width: '100%', minHeight: '100vh'}}>
-      <DarumaBall />
+      <DarumaBall activeLeftPupil={true} activeRightPupil={true} />
     </Box>
   )
 }
