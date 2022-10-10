@@ -8,6 +8,7 @@ import SideNavBar from "./components/SideNavBar";
 import HomePage from "./HomePage";
 import ListDarumaPage from "./ListDarumaPage";
 import './App.css';
+import withSplashScreen from "./components/splashScreen/withSplashScreen";
 
 function App(){
   return (
@@ -24,4 +25,4 @@ function App(){
   )
 }
 
-export default App;
+export default withSplashScreen(App);
