@@ -157,10 +157,10 @@ function DarumaBall() {
         <EyeBrow top='12%' left='20%' rotation='110' />
         <EyeBrow top='12%' right='20%' rotation='65'  />
         <Eye top='35%' left='15%'>
-          <Pupil />
+          <Pupil active={true}/>
         </Eye>
         <Eye top='35%' right='15%'>
-          <Pupil active='true' />
+          <Pupil active={true}/>
         </Eye>
         <Nose />
         <Mustache top='65%' left='9.5%' right='9.5%' />
