@@ -7,7 +7,8 @@
   "homepage": "./",
   "scripts": {
     "start": "concurrently -k 'cross-env BROWSER=NONE npm run start --prefix ./app' 'npm run electron:start'",
-    "electron:start": "wait-on tcp:3000 && electron-forge start",
+    "electron:start": "electron-forge start",
+    "electron-wait:start": "wait-on tcp:3000 && electron-forge start",
     "package": "npm run build:renderer --prefix ./app && electron-forge package",
     "make": "npm run build:renderer --prefix ./app && electron-forge make",
     "publish": "electron-forge publish",
