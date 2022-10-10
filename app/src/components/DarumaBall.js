@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const Ball = styled.div`
   background-color: #ff5252;
-  width: 150px;
-  height: 180px;
+  width: 160px;
+  height: 200px;
   border-radius: 100% / 80% 80% 120% 120%;
   position: relative;
 `;
@@ -63,6 +63,13 @@ const Pupil = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
+
+  ${({active}) => {
+      return active ? {
+        display: 'block'
+      } : null
+  }};
 `;
 
 const Nose = styled.div`
@@ -153,7 +160,7 @@ function DarumaBall() {
           <Pupil />
         </Eye>
         <Eye top='35%' right='15%'>
-          <Pupil />
+          <Pupil active='true' />
         </Eye>
         <Nose />
         <Mustache top='65%' left='9.5%' right='9.5%' />
