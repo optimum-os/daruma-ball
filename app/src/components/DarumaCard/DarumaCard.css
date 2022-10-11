@@ -1,0 +1,60 @@
+.daruma__card{
+  max-width: 300px;
+  min-height: 250px;
+  box-shadow: 0px 10px 15px -3px rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgb(240 240 240);
+  border-bottom: 6px solid rgb(237 98 98);
+  cursor: pointer;
+}
+
+.daruma__ball_container, .daruma__card_description, .daruma__card_tags_and_actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.daruma__card_description{
+  margin-top: 10px;
+}
+
+.daruma__ball_container {
+  position: relative;
+  height: 90px;
+  border-radius: 10px;
+  background-color: rgb(253, 253, 253);
+}
+
+.daruma__ball_wrapper {
+  position: absolute;
+  top: -65px;
+}
+
+.daruma__card_description_text {
+  text-align: center;
+  padding: 10px;
+}
+
+.daruma__card_tags_and_actions {
+  margin: 2px 0 10px;
+  padding: 0 10px 0 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.daruma__card_tags{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.daruma__card_tag {
+  border: 1px solid rgb(185, 185, 185);
+  color: rgb(99, 99, 99);
+  border-radius: 15px;
+  padding: 1px 8px;
+}

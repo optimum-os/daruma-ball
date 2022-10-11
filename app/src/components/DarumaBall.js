@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 const Ball = styled.div`
   background-color: #ff5252;
-  width: 170px;
-  height: 200px;
-  border-radius: 100% / 80% 80% 120% 120%;
+  width: ${props => props.width};;
+  height: ${props => props.height};
+  /* Face like border-radius */
+  /* border-radius: 100% / 80% 80% 120% 120%; */
+  border-radius: 50%;
   position: relative;
 `;
 
@@ -150,9 +152,9 @@ const KanjiMark = styled.p`
   font-size: 2.3rem;
 `;
 
-function DarumaBall({activeLeftPupil = false, activeRightPupil = false, border = false}) {
+function DarumaBall({activeLeftPupil = false, activeRightPupil = false, border = false, height = '150px', width = '130px'}) {
   return (
-    <Ball>
+    <Ball height={height} width={width}>
       <Face top='10%' left='8%'>
         <EyeBrow top='12%' left='20%' rotation='110' />
         <EyeBrow top='12%' right='20%' rotation='65'  />

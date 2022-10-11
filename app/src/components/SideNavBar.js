@@ -11,7 +11,7 @@ import ListItemText from '@mui/material/ListItemText';
 import { Avatar, Stack} from '@mui/material';
 import { grey } from '@mui/material/colors';
 import HomeIcon from '@mui/icons-material/Home';
-import PlaylistAddIcon from '@mui/icons-material/PlaylistAdd';
+import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 
 import daruma from '../assets/daruma.svg';
 
@@ -55,7 +55,7 @@ function SideNavBar() {
           <ListItem disablePadding>
               <ListItemButton onClick={() => navigate('/list')}>
                 <ListItemIcon>
-                  <PlaylistAddIcon />
+                  <FormatListBulletedIcon />
                 </ListItemIcon>
                 <ListItemText primary='Liste' />
               </ListItemButton>
