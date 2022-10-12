@@ -74,10 +74,16 @@ function HomePage() {
           >
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
             <CardContent sx={{ flex: '1 0 auto' }}>
-              <Typography component="div" variant="h5" sx={{marginBottom: 1}}>
+              <Typography
+                sx={{ marginBottom: 1, textAlign: { xs: 'center', md: 'left' }}} 
+                component="div"
+                variant="h5"
+              >
                 Faites de vos objectifs une réalité
               </Typography>
-              <Typography variant="subtitle1" sx={{color: '#ebebeb'}} component="div">
+              <Typography variant="subtitle1" 
+                sx={{ textAlign: { xs: 'center', md: 'left' }}}
+                component="div">
                 Avec daruma, plus besoin de procrastiner
               </Typography>
             </CardContent>
@@ -149,7 +155,7 @@ function HomePage() {
 
         <SpeedDial
           ariaLabel="SpeedDial basic example"
-          sx={{ position: 'absolute', bottom: 16, right: 16 }}
+          sx={{ position: 'fixed', bottom: 16, right: 16 }}
           icon={<SpeedDialIcon />}
         >
           {actions.map((action) => (
