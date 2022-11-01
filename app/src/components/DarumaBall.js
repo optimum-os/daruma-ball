@@ -1,14 +1,19 @@
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const Ball = styled.div`
-  background-color: #ff5252;
-  width: ${props => props.width};;
-  height: ${props => props.height};
-  /* Face like border-radius */
-  /* border-radius: 100% / 80% 80% 120% 120%; */
-  border-radius: 50%;
-  position: relative;
-`;
+const BallColor = {
+  green: { primary: "#30980e" },
+  white: {
+    primary: "#fff",
+    filter: "drop-shadow(-1px 2px 4px #c6c6c6)",
+  },
+  black: { primary: "#000" },
+  red: { primary: "#ff5252" },
+  gold: {
+    primary: "#fff039",
+    textColor: "#ff5252",
+  },
+};
 
 const Face = styled.div`
   background-color: #fca;
@@ -19,10 +24,10 @@ const Face = styled.div`
   border-bottom-left-radius: 30%;
   border-bottom-right-radius: 30%;
   position: absolute;
-  top: ${props => props.top || 'auto'};
-  right: ${props => props.right || 'auto'};
-  left: ${props => props.left || 'auto'};
-  bottom: ${props => props.bottom || 'auto'};
+  top: ${(props) => props.top || "auto"};
+  right: ${(props) => props.right || "auto"};
+  left: ${(props) => props.left || "auto"};
+  bottom: ${(props) => props.bottom || "auto"};
 `;
 
 const EyeBrow = styled.div`
@@ -31,11 +36,11 @@ const EyeBrow = styled.div`
   width: 7.5%;
   height: 25%;
   position: absolute;
-  top: ${props => props.top || 'auto'};
-  right: ${props => props.right || 'auto'};
-  left: ${props => props.left || 'auto'};
-  bottom: ${props => props.bottom || 'auto'};
-  transform: rotate(${props => props.rotation || '90'}deg);
+  top: ${(props) => props.top || "auto"};
+  right: ${(props) => props.right || "auto"};
+  left: ${(props) => props.left || "auto"};
+  bottom: ${(props) => props.bottom || "auto"};
+  transform: rotate(${(props) => props.rotation || "90"}deg);
 `;
 
 const Eye = styled.div`
@@ -44,15 +49,25 @@ const Eye = styled.div`
   height: 30%;
   border-radius: 100%;
   position: absolute;
-  top: ${props => props.top || 'auto'};
-  right: ${props => props.right || 'auto'};
-  left: ${props => props.left || 'auto'};
-  bottom: ${props => props.bottom || 'auto'};
+  top: ${(props) => props.top || "auto"};
+  right: ${(props) => props.right || "auto"};
+  left: ${(props) => props.left || "auto"};
+  bottom: ${(props) => props.bottom || "auto"};
 
-  ${({border}) => {
-      return border ? {
-        border: '3px solid #000'
-      } : null
+  ${({ border }) => {
+    return border
+      ? {
+          border: "3px solid #000",
+        }
+      : null;
+  }};
+
+  ${({ pointer }) => {
+    return pointer
+      ? {
+          cursor: "pointer",
+        }
+      : null;
   }};
 `;
 
@@ -67,10 +82,12 @@ const Pupil = styled.div`
   transform: translate(-50%, -50%);
   display: none;
 
-  ${({active}) => {
-      return active ? {
-        display: 'block'
-      } : null
+  ${({ active }) => {
+    return active
+      ? {
+          display: "block",
+        }
+      : null;
   }};
 `;
 
@@ -84,8 +101,9 @@ const Nose = styled.div`
   transform: translateX(-50%);
   z-index: 11;
   border-bottom: 0.8vh solid #cc0000;
-  
-  &:before, &:after {
+
+  &:before,
+  &:after {
     content: "";
     display: block;
     width: 100%;
@@ -96,7 +114,7 @@ const Nose = styled.div`
     border-radius: 50%;
     box-shadow: inset -0.3vh 1vh 0px 0.1vh #cc0000;
   }
-  
+
   &:after {
     right: auto;
     left: -60%;
@@ -105,26 +123,29 @@ const Nose = styled.div`
 `;
 
 const Mustache = styled.div`
-  &:before, &:after {
+  &:before,
+  &:after {
     content: "";
     box-sizing: border-box;
     display: block;
     width: 28%;
     height: 25%;
     position: absolute;
-    top:  ${props => props.top || 'auto'};
-    left: ${props => props.left || 'auto'};
+    top: ${(props) => props.top || "auto"};
+    left: ${(props) => props.left || "auto"};
     box-shadow: inset 0.8vh -1vh 0px 0.8vh #222222;
     border-radius: 45%;
   }
   &:after {
     left: auto;
-    right: ${props => props.right || 'auto'};
+    right: ${(props) => props.right || "auto"};
     box-shadow: inset -0.8vh -1vh 0px 0.8vh #222222;
   }
 `;
 
 const Chin = styled.div`
+  --mark-color: gold;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,36 +155,84 @@ const Chin = styled.div`
   position: absolute;
   left: 10%;
   bottom: 12% !important;
+  color: var(--mark-color);
 `;
 
 const ChinMark = styled.div`
   display: block;
-  width: ${props => props.width || '6%'};
-  height: ${props => props.height || '75%'};
+  width: ${(props) => props.width || "6%"};
+  height: ${(props) => props.height || "75%"};
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  box-shadow: inset 2vh 1.5vh 0px 0px gold;
+  box-shadow: inset 2vh 1.5vh 0px 0px var(--mark-color);
 `;
 
 const KanjiMark = styled.p`
-  color: gold;
   font-size: 2.3rem;
 `;
 
-function DarumaBall({activeLeftPupil = false, activeRightPupil = false, border = false, height = '150px', width = '130px'}) {
+const Ball = styled.div`
+  background-color: ${(props) =>
+    BallColor[props.color]?.["primary"] || BallColor["red"]["primary"]};
+  filter: ${(props) => BallColor[props.color]["filter"]};
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  /* Face like border-radius */
+  /* border-radius: 100% / 80% 80% 120% 120%; */
+  border-radius: 50%;
+  position: relative;
+
+  > ${Chin} {
+    --mark-color: ${(props) => BallColor[props.color]?.["textColor"] || "gold"};
+  }
+`;
+
+function DarumaBall({
+  activeLeftPupil = false,
+  activeRightPupil = false,
+  border = false,
+  height = "150px",
+  width = "130px",
+  color = "red",
+  editable = false,
+  onUpdatePupil,
+}) {
   return (
-    <Ball height={height} width={width}>
+    <Ball height={height} width={width} color={color}>
       <Face top='10%' left='8%'>
         <EyeBrow top='12%' left='20%' rotation='110' />
-        <EyeBrow top='12%' right='20%' rotation='65'  />
-        <Eye top='35%' left='15%' border={border}>
-          <Pupil active={activeLeftPupil}/>
-        </Eye>
-        <Eye top='35%' right='15%' border={border}>
-          <Pupil active={activeRightPupil}/>
-        </Eye>
+        <EyeBrow top='12%' right='20%' rotation='65' />
+        {!editable ? (
+          <Eye top='35%' left='15%' border={border}>
+            <Pupil active={activeLeftPupil} />
+          </Eye>
+        ) : (
+          <Eye
+            top='35%'
+            left='15%'
+            pointer
+            border={border}
+            onClick={() => onUpdatePupil("left")}>
+            <Pupil active={activeLeftPupil} />
+          </Eye>
+        )}
+
+        {!editable ? (
+          <Eye top='35%' right='15%' border={border}>
+            <Pupil active={activeRightPupil} />
+          </Eye>
+        ) : (
+          <Eye
+            top='35%'
+            right='15%'
+            pointer
+            border={border}
+            onClick={() => onUpdatePupil("right")}>
+            <Pupil active={activeRightPupil} />
+          </Eye>
+        )}
         <Nose />
         <Mustache top='65%' left='9.5%' right='9.5%' />
       </Face>
@@ -176,10 +245,10 @@ function DarumaBall({activeLeftPupil = false, activeRightPupil = false, border =
         <ChinMark />
       </Chin>
     </Ball>
-  )
+  );
 }
 
 // https://codepen.io/william-index/pen/pJZpgN
 // https://codepen.io/alvaromontoro/pen/KKMWWLv
 
-export default DarumaBall;
+export default React.memo(DarumaBall);

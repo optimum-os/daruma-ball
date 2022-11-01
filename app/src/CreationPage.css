@@ -1,0 +1,40 @@
+.creationpage__container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/creation_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.creationpage__description_box {
+  position: absolute;
+  bottom: 0;
+  height: 15vh;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.creationpage__description_content {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 1.1rem;
+  background: none;
+  resize: none;
+  border: none;
+  outline: none;
+  font-family: monospace;
+}
+
+.creationpage__daruma__ball_wrapper {
+  position: absolute;
+  bottom: 16vh;
+}
