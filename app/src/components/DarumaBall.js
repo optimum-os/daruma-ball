@@ -198,6 +198,7 @@ function DarumaBall({
   color = "red",
   editable = false,
   onUpdatePupil,
+  onRemovePupil,
 }) {
   return (
     <Ball height={height} width={width} color={color}>
@@ -214,7 +215,8 @@ function DarumaBall({
             left='15%'
             pointer
             border={border}
-            onClick={() => onUpdatePupil("left")}>
+            onClick={() => onUpdatePupil("left")}
+            onDoubleClick={() => onRemovePupil("left")}>
             <Pupil active={activeLeftPupil} />
           </Eye>
         )}
@@ -229,7 +231,8 @@ function DarumaBall({
             right='15%'
             pointer
             border={border}
-            onClick={() => onUpdatePupil("right")}>
+            onClick={() => onUpdatePupil("right")}
+            onDoubleClick={() => onRemovePupil("right")}>
             <Pupil active={activeRightPupil} />
           </Eye>
         )}
