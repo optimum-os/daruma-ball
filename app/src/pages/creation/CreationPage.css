@@ -5,12 +5,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/creation_bg.png");
+  background-image: url("../../assets/creation_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   overflow: hidden;
+}
+
+.creationpage__container.deactivate {
+  pointer-events: none !important;
+  cursor: not-allowed;
 }
 
 .creationpage__description_box {

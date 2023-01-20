@@ -15,8 +15,9 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import AddIcon from "@mui/icons-material/Add";
 import MuiDrawer from "@mui/material/Drawer";
 import { styled, useTheme } from "@mui/material/styles";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
-import daruma from "../assets/daruma.svg";
+import { daruma } from "../assets";
 
 const drawerWidth = 240;
 
@@ -181,6 +182,31 @@ function SideNavBar() {
           </ListItemButton>
         </ListItem>
       </List>
+
+      <Divider />
+      <List>
+        <ListItem disablePadding sx={{ display: "block" }}>
+          <ListItemButton
+            sx={{
+              minHeight: 48,
+              justifyContent: open ? "initial" : "center",
+              px: 2.5,
+            }}
+            onClick={() => navigate("/profil")}>
+            <ListItemIcon
+              sx={{
+                minWidth: 0,
+                mr: open ? 3 : "auto",
+                justifyContent: "center",
+              }}>
+              <AccountCircleIcon />
+            </ListItemIcon>
+            <ListItemText primary='Profil' sx={{ opacity: open ? 1 : 0 }} />
+          </ListItemButton>
+        </ListItem>
+      </List>
+      <Divider />
+
       <DrawerFooter sx={{ left: open ? "auto" : 0, right: open ? 0 : "auto" }}>
         <IconButton onClick={toggleDrawer}>
           {open ? (

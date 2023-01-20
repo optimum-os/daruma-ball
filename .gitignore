@@ -91,3 +91,5 @@ out/
 # Renderer App
 app/node_modules
 build/
+
+secrets.env

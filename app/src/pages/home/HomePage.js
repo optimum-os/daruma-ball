@@ -22,9 +22,8 @@ import ShareIcon from "@mui/icons-material/Share";
 import FaceIcon from "@mui/icons-material/Face";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
 import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
-
-import homeCardImg from "./assets/home-card.png";
-import { defaultTheme } from "./theme";
+import { homeCardImg } from "../../assets";
+import { defaultTheme } from "../../theme";
 import { useNavigate } from "react-router-dom";
 
 const steps = [

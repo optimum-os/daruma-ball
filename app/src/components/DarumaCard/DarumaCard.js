@@ -23,7 +23,9 @@ function DarumaCard({
   title,
   description,
   difficulty,
-  typeOfDaruma = "chance",
+  typeDaruma = "chance",
+  activeLeftPupil = true,
+  activeRightPupil = true,
 }) {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -41,24 +43,24 @@ function DarumaCard({
       <div className='daruma__ball_container'>
         <div className='daruma__ball_wrapper'>
           <DarumaBall
-            activeLeftPupil={true}
-            activeRightPupil={true}
-            color={ColorDaruma[typeOfDaruma]}
+            activeLeftPupil={activeLeftPupil}
+            activeRightPupil={activeRightPupil}
+            color={ColorDaruma[typeDaruma]}
           />
         </div>
       </div>
 
       <div className='daruma__card_description'>
-        <h2 className='daruma__card_description_title'>The title</h2>
-        <p className='daruma__card_description_text'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        </p>
+        <h2 className='daruma__card_description_title'>
+          {title.charAt(0).toUpperCase() + title.slice(1)}
+        </h2>
+        <p className='daruma__card_description_text'>{description}</p>
       </div>
 
       <div className='daruma__card_tags_and_actions'>
         <div className='daruma__card_tags'>
-          <span className='daruma__card_tag'>difficulty</span>
-          <span className='daruma__card_tag'>{typeOfDaruma}</span>
+          <span className='daruma__card_tag'>{difficulty}</span>
+          <span className='daruma__card_tag'>{typeDaruma}</span>
         </div>
         <div className='daruma__card_actions'>
           <IconButton

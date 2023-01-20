@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import DarumaBall from "./components/DarumaBall";
-import lantern from "./assets/lantern.png";
+import DarumaBall from "../../components/DarumaBall";
 import "./CreationPage.css";
 import {
   Box,
@@ -16,11 +15,14 @@ import {
   Select,
   TextField,
 } from "@mui/material";
-import japan_song from "./assets/Japan-by-uniq.mp3";
-import sakuya_song from "./assets/PerituneMaterial_Sakuya.mp3";
-import sakuya2_song from "./assets/PerituneMaterial_Sakuya2.mp3";
+import { lantern, japan_song, sakuya_song, sakuya2_song } from "../../assets";
 import MusicOffIcon from "@mui/icons-material/MusicOff";
 import MusicNote from "@mui/icons-material/MusicNote";
+import toast, { Toaster } from "react-hot-toast";
+import { useSelector } from "react-redux";
+import { selectUser } from "../../store/slice/AuthSlice";
+import { useNavigate } from "react-router-dom";
+import { supabase } from "../../lib/api";
 
 const songs = [japan_song, sakuya_song, sakuya2_song];
 
@@ -38,6 +40,39 @@ function CreationPage() {
   );
   const [isPlaying, setIsPlaying] = useState(true);
   const ballWrapper = useRef();
+  const navigate = useNavigate();
+  const user = useSelector(selectUser);
+
+  useEffect(() => {
+    let toastId = null;
+
+    if (!user) {
+      toastId = toast(
+        (t) => (
+          <span>
+            ❌ vous devez vous{" "}
+            <b
+              style={{
+                textDecoration: "underline",
+                color: "blue",
+                cursor: "pointer",
+              }}
+              onClick={() => {
+                toast.dismiss(t.id);
+                navigate("/login");
+              }}>
+              connecter
+            </b>
+          </span>
+        ),
+        { duration: 1000000 }
+      );
+    }
+
+    return () => {
+      toast.remove(toastId);
+    };
+  }, [user]);
 
   const onUpdatePupil = useCallback((position) => {
     if (position === "left") {
@@ -101,19 +136,27 @@ function CreationPage() {
     setDifficulty(e.target.value);
   };
 
-  const createDaruma = () => {
+  const createDaruma = async () => {
     if (title && typeDaruma) {
       const daruma = {
         title,
         description,
-        typeDaruma,
         difficulty,
-        activeLeftPupil,
-        activeRightPupil,
+        type_daruma: typeDaruma,
+        active_left_pupil: activeLeftPupil,
+        active_right_pupil: activeRightPupil,
       };
       console.log(daruma);
 
       // TODO: Enregistrer
+      const { data: darumaSaved, error } = await supabase
+        .from("daruma")
+        .insert({ ...daruma, user_id: user.id })
+        .single();
+
+      if (!error) {
+        toast.success("Votre Daruma est prêt");
+      }
 
       setOpen(false);
       resetModal();
@@ -145,7 +188,9 @@ function CreationPage() {
   };
 
   return (
-    <div className='creationpage__container'>
+    <div
+      className={["creationpage__container", !user && "deactivate"].join(" ")}>
+      <Toaster />
       <div className='creationpage__daruma__ball_wrapper' ref={ballWrapper}>
         <DarumaBall
           editable
