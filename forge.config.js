@@ -1,6 +1,8 @@
 module.exports = {
   packagerConfig: {
     icon: "./src/assets/icons/daruma",
+    platform: "all",
+    arch: "all",
   },
 
   makers: [

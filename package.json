@@ -12,7 +12,7 @@
     "package": "npm run build:renderer --prefix ./app && electron-forge package",
     "make": "npm run build:renderer --prefix ./app && electron-forge make",
     "build": "electron-forge make",
-    "build:exe": "electron-forge package --platform=win32 --arch=x64",
+    "build:exe": "electron-forge make --platform=win32 --arch=x64",
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
@@ -32,7 +32,6 @@
     "@electron-forge/maker-dmg": "^6.0.4",
     "@electron-forge/maker-rpm": "^6.0.0-beta.67",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.67",
-    "@electron-forge/maker-wix": "^6.0.4",
     "@electron-forge/maker-zip": "^6.0.0-beta.67",
     "concurrently": "^7.4.0",
     "cross-env": "^7.0.3",
