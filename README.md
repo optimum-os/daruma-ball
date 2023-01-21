@@ -1,8 +1,9 @@
 # Daruma Ball
 
 ### Our Goal : <span style='color: #ff7474'>Transform your to-do list into a done list</span>
-#### [Download latest version here](https://github.com/Alexon1999/daruma-ball/releases)
-#### [daruma web app](http://app.daruma-ball.surge.sh)
+
+#### [Download Desktop app here](https://github.com/Alexon1999/daruma-ball/releases)
+#### [Website](http://app.daruma-ball.surge.sh)
 
 # Screens
 ![](markdown/demo_splash.png)
