@@ -38,13 +38,16 @@
   - **on Github**
     - change the version on package.json, commit and push it.
   ```
-  # create a release on (https://github.com/Alexon1999/daruma-ball/releases)  
+  # create a release github repo
   $ npm run publish
   ```
+    - release will be available [here](https://github.com/Alexon1999/daruma-ball/releases)
+    - select a release and publish it
 
 ### Source
 - [Electron Forge Getting Started](https://www.electronforge.io/)
 - [Configure Electron Forge](https://www.electronforge.io/configuration)
 - [Packaging Electron app with Electron Forge](https://www.electronjs.org/docs/latest/tutorial/tutorial-packaging)
+- [Github publisher](https://www.electronforge.io/config/publishers/github)
 - [Database and Authentication with Supabase](https://github.com/supabase/examples-archive/tree/76e8b276f7fb58ba65b265a16678e9c72c23a72f/supabase-js-v1/todo-list/react-todo-list)
 - [Environment Variable Create-React-APP](https://create-react-app.dev/docs/adding-custom-environment-variables/)
