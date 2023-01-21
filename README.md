@@ -36,7 +36,7 @@
 
 - Release app
   - **on Github**
-    - change the version on package.json, commit and push it.
+    - change the version on package.json, commit and push it. each release is attached to a commit.
   ```
   # create a release github repo
   $ npm run publish
