@@ -34,6 +34,12 @@
     $ npm run build
   ```
 
+- Release app
+  - on Github
+  ```  
+  $ npm run publish
+  ```
+
 ### Source
 - [Electron Forge Getting Started](https://www.electronforge.io/)
 - [Configure Electron Forge](https://www.electronforge.io/configuration)
