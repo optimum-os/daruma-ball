@@ -26,7 +26,10 @@ const createWindow = () => {
     mainWindow.maximize();
   } else {
     // and load the index.html of the app.
-    mainWindow.loadFile(path.join(__dirname, "../build/index.html"));
+    //mainWindow.loadFile(path.join(__dirname, "../build/index.html"));
+
+    // deployed URL
+    mainWindow.loadURL("http://app.daruma-ball.surge.sh/");
   }
 };
 

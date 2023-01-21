@@ -11,6 +11,8 @@
     "electron-wait:start": "wait-on -v --delay 3000 http://127.0.0.1:3000/ && electron-forge start",
     "package": "npm run build:renderer --prefix ./app && electron-forge package",
     "make": "npm run build:renderer --prefix ./app && electron-forge make",
+    "build": "electron-forge make",
+    "build:exe": "electron-forge package --platform=win32 --arch=x64",
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
@@ -20,33 +22,6 @@
     "email": "alexon1999@gmail.com"
   },
   "license": "MIT",
-  "config": {
-    "forge": {
-      "packagerConfig": {},
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "daruma_ball"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
-    }
-  },
   "dependencies": {
     "electron-is-dev": "^2.0.0",
     "electron-squirrel-startup": "^1.0.0"
@@ -54,8 +29,10 @@
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.67",
     "@electron-forge/maker-deb": "^6.0.0-beta.67",
+    "@electron-forge/maker-dmg": "^6.0.4",
     "@electron-forge/maker-rpm": "^6.0.0-beta.67",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.67",
+    "@electron-forge/maker-wix": "^6.0.4",
     "@electron-forge/maker-zip": "^6.0.0-beta.67",
     "concurrently": "^7.4.0",
     "cross-env": "^7.0.3",
