@@ -19,6 +19,9 @@
   ```
   $ cd app
   $ npm install
+
+  # create two environment files to seperate environments (.env.development.local and .env.production.local) but in realworld deployment use (.env.development and .env.production), see the .env.example
+  $ cat .env.example
   ```
 
   - on root of electron app
@@ -36,3 +39,4 @@
 - [Configure Electron Forge](https://www.electronforge.io/configuration)
 - [Packaging Electron app with Electron Forge](https://www.electronjs.org/docs/latest/tutorial/tutorial-packaging)
 - [Database and Authentication with Supabase](https://github.com/supabase/examples-archive/tree/76e8b276f7fb58ba65b265a16678e9c72c23a72f/supabase-js-v1/todo-list/react-todo-list)
+- [Environment Variable Create-React-APP](https://create-react-app.dev/docs/adding-custom-environment-variables/)
