@@ -35,7 +35,8 @@
   ```
 
 - Release app
-  - on Github
+  - **on Github**
+    - change the version on package.json, commit and push it.
   ```
   # create a release on (https://github.com/Alexon1999/daruma-ball/releases)  
   $ npm run publish
