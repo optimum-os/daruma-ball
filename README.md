@@ -36,7 +36,8 @@
 
 - Release app
   - on Github
-  ```  
+  ```
+  # create a release on (https://github.com/Alexon1999/daruma-ball/releases)  
   $ npm run publish
   ```
 
