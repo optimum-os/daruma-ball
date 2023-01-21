@@ -43,8 +43,8 @@
   # create a release github repo
   $ npm run publish
   ```
-    - release will be available [here](https://github.com/Alexon1999/daruma-ball/releases)
-    - select a release and publish it
+    - releases will be available [here](https://github.com/Alexon1999/daruma-ball/releases)
+    - select a release and publish it.
 
 ### Source
 - [Electron Forge Getting Started](https://www.electronforge.io/)
