@@ -10,6 +10,9 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import DarumaBall from "../DarumaBall";
 import "./DarumaCard.css";
+import { useSelector } from "react-redux";
+import { selectUser } from "../../store/slice/AuthSlice";
+import { supabase } from "../../lib/api";
 
 const ColorDaruma = {
   chance: "red",
@@ -20,12 +23,17 @@ const ColorDaruma = {
 };
 
 function DarumaCard({
+  id,
+  userId,
   title,
   description,
   difficulty,
+  isFinished,
   typeDaruma = "chance",
   activeLeftPupil = true,
   activeRightPupil = true,
+  setNotFinishedDaruma,
+  setFinishedDaruma,
 }) {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -89,7 +97,13 @@ function DarumaCard({
               vertical: "top",
               horizontal: "left",
             }}>
-            <IconMenu />
+            <IconMenu
+              id={id}
+              userId={userId}
+              isFinished={isFinished}
+              setNotFinishedDaruma={setNotFinishedDaruma}
+              setFinishedDaruma={setFinishedDaruma}
+            />
           </Menu>
         </div>
       </div>
@@ -97,17 +111,49 @@ function DarumaCard({
   );
 }
 
-function IconMenu() {
+function IconMenu({
+  id,
+  userId,
+  isFinished,
+  setNotFinishedDaruma,
+  setFinishedDaruma,
+}) {
+  const user = useSelector(selectUser);
+
+  const finishDaruma = async () => {
+    if (user && userId === user.id) {
+      const { data, error } = await supabase
+        .from("daruma")
+        .update({ is_finished: true })
+        .eq("id", id);
+
+      if (!error) {
+        setFinishedDaruma((prev) => prev.filter((daruma) => daruma.id !== id));
+      }
+    }
+  };
+
+  const deleteDaruma = async () => {
+    if (user && userId === user.id) {
+      const { data, error } = await supabase
+        .from("daruma")
+        .delete()
+        .eq("id", id);
+    }
+  };
+
   return (
     <Paper>
       <MenuList>
-        <MenuItem>
-          <ListItemIcon>
-            <EditIcon fontSize='small' />
-          </ListItemIcon>
-          <ListItemText>Modifier</ListItemText>
-        </MenuItem>
-        <MenuItem>
+        {!isFinished && (
+          <MenuItem onClick={finishDaruma}>
+            <ListItemIcon>
+              <EditIcon fontSize='small' />
+            </ListItemIcon>
+            <ListItemText>Terminer</ListItemText>
+          </MenuItem>
+        )}
+        <MenuItem onClick={deleteDaruma}>
           <ListItemIcon>
             <DeleteIcon fontSize='small' />
           </ListItemIcon>
