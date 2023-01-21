@@ -47,4 +47,18 @@ module.exports = {
       },
     },
   ],
+  publishers: [
+    {
+      name: "@electron-forge/publisher-github",
+      config: {
+        repository: {
+          owner: "Alexon1999",
+          name: "daruma-ball",
+        },
+        authToken:
+          "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",
+        prerelease: true,
+      },
+    },
+  ],
 };
