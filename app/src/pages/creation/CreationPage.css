@@ -70,10 +70,10 @@
 
 .creationpage__validate_btn_light {
   position: absolute;
-  width: 87%;
-  height: 60%;
+  width: 95%;
+  height: 65%;
   border-radius: 50%;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: box-shadow 1s ease;
@@ -89,7 +89,7 @@
 
 @keyframes lightSpreading {
   50% {
-    box-shadow: 0px -1px 13px 8px #ffe6b0;
+    box-shadow: -1px 6px 19px 13px #ffe6b0;
   }
 }
 

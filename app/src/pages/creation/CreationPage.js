@@ -94,7 +94,7 @@ function CreationPage() {
 
   const checkValues = () => {
     if (!activeLeftPupil && !activeRightPupil) {
-      alert("Ajoutez une pupille à votre Daruma");
+      toast.error("Ajoutez une pupille à votre Daruma");
 
       ballWrapper.current.classList.add("shake");
       setTimeout(() => {
