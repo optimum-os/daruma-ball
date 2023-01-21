@@ -137,7 +137,7 @@ function CreationPage() {
   };
 
   const createDaruma = async () => {
-    if (title && typeDaruma) {
+    if (title && typeDaruma && difficulty) {
       const daruma = {
         title,
         description,
