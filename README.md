@@ -35,4 +35,4 @@
 - [Electron Forge Getting Started](https://www.electronforge.io/)
 - [Configure Electron Forge](https://www.electronforge.io/configuration)
 - [Packaging Electron app with Electron Forge](https://www.electronjs.org/docs/latest/tutorial/tutorial-packaging)
-- [Database and Authentication with Supbase](https://github.com/supabase/examples-archive/tree/76e8b276f7fb58ba65b265a16678e9c72c23a72f/supabase-js-v1/todo-list/react-todo-list)
+- [Database and Authentication with Supabase](https://github.com/supabase/examples-archive/tree/76e8b276f7fb58ba65b265a16678e9c72c23a72f/supabase-js-v1/todo-list/react-todo-list)
