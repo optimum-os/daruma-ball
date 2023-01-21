@@ -3,8 +3,9 @@ module.exports = {
     icon: "./src/assets/icons/daruma",
     platform: "all",
     arch: "all",
+    ignore: ["app", "markdown"],
   },
-
+  rebuildConfig: {},
   makers: [
     {
       name: "@electron-forge/maker-squirrel",
@@ -20,6 +21,22 @@ module.exports = {
         options: {
           icon: "./src/assets/icons/daruma.png",
         },
+      },
+    },
+    {
+      // Path to a single image that will act as icon for the application
+      name: "@electron-forge/maker-rpm",
+      config: {
+        options: {
+          icon: "./src/assets/icons/daruma.png",
+        },
+      },
+    },
+    {
+      // Path to the icon to use for the app in the DMG window
+      name: "@electron-forge/maker-zip",
+      config: {
+        platforms: ["darwin"],
       },
     },
     {

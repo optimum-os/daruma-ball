@@ -124,7 +124,11 @@ function IconMenu({
     if (user && userId === user.id) {
       const { data, error } = await supabase
         .from("daruma")
-        .update({ is_finished: true })
+        .update({
+          is_finished: true,
+          active_left_pupil: true,
+          active_right_pupil: true,
+        })
         .eq("id", id);
 
       if (!error) {

@@ -113,7 +113,7 @@ function HomePage() {
                 variant='subtitle1'
                 sx={{ textAlign: { xs: "center", md: "left" } }}
                 component='div'>
-                Avec daruma, plus besoin de procrastiner
+                Avec daruma La procrastination, c'est fini !
               </Typography>
             </CardContent>
           </Box>

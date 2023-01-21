@@ -12,7 +12,6 @@
     "package": "npm run build:renderer --prefix ./app && electron-forge package",
     "make": "npm run build:renderer --prefix ./app && electron-forge make",
     "build": "electron-forge make",
-    "build:exe": "electron-forge make --platform=win32 --arch=x64",
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
