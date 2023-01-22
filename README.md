@@ -10,7 +10,7 @@
   <a href="https://github.com/Alexon1999/daruma-ball/blob/master/LICENCE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="React Native is released under the MIT license." />
   </a>
-  <a href="https://daruma-ball.web.app/" target='_blank'>
+  <a href="https://daruma-ball.web.app/">
     <img src="https://img.shields.io/website?url=https://daruma-ball.web.app" alt="Website" />
   </a>
   <a href="https://github.com/Alexon1999/daruma-ball/releases">
