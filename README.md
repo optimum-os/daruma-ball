@@ -1,4 +1,9 @@
-# Daruma Ball
+<div style='display: flex; flex-direction:column; justify-content: center; align-items: center; '>
+  <h1 style='color: #ff7474;'>Daruma Ball</h1>
+  <img src='markdown/daruma.png' width='150' height='150' />
+</div>
+
+<br />
 
 ### Our Goal : <span style='color: #ff7474'>Transform your to-do list into a done list</span>
 
@@ -50,6 +55,7 @@
 - [Electron Forge Getting Started](https://www.electronforge.io/)
 - [Configure Electron Forge](https://www.electronforge.io/configuration)
 - [Packaging Electron app with Electron Forge](https://www.electronjs.org/docs/latest/tutorial/tutorial-packaging)
+- [Code Signing](https://www.electronforge.io/guides/code-signing)
 - [Github publisher](https://www.electronforge.io/config/publishers/github)
 - [Database and Authentication with Supabase](https://github.com/supabase/examples-archive/tree/76e8b276f7fb58ba65b265a16678e9c72c23a72f/supabase-js-v1/todo-list/react-todo-list)
 - [Environment Variable Create-React-APP](https://create-react-app.dev/docs/adding-custom-environment-variables/)
