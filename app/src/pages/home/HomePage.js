@@ -130,7 +130,7 @@ function HomePage() {
         <Stack direction='row' flexWrap='wrap' sx={{ gap: 2 }}>
           <Chip
             icon={<AccessAlarmIcon />}
-            label='Anti-procrastinator'
+            label='Procrastination-buster'
             variant='outlined'
           />
           <Chip
