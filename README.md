@@ -51,7 +51,7 @@ If you want to see how it's done, please refer to the [SETUP.md](SETUP.md)
 ## Contributing
 If you are interested in reporting/fixing issues and contributing directly to the code base, please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
 
-##### :bulb: If you have any suggestions for new features or improvements for the app, we would love to hear them.[Click here](https://github.com/Alexon1999/daruma-ball/issues/1)
+##### :bulb: If you have any suggestions for new features or improvements for the app, we would love to hear them [Click here](https://github.com/Alexon1999/daruma-ball/issues/1).
 
 
 ## Licence
