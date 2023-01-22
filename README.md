@@ -38,14 +38,20 @@
     $ npx create-electron-app daruma-ball
   ```
 - Plug the electron app with a React app
-  - on react app
-  ```
-  $ cd app
-  $ npm install
+  - on React app
+    ```
+    $ cd app
+    $ npm install
+    ```
 
-  # create two environment files to seperate environments (.env.development.local and .env.production.local) but in realworld deployment use (.env.development and .env.production), see the .env.example
-  $ cat .env.example
-  ```
+    - We Also use [Supabase](https://supabase.com/) for their Database and Authentication service.
+      - create your own supabase project
+      - On the production, add your SITE URL in Authentication -> URL Configiration -> Site URL and Redirect URLs
+      - add SUPABASE_URL and SUPABASE_KEY in SUPABASE_KEY in the Environment file
+      ```
+        # create two environment files to seperate environments (.env.development.local and .env.production.local) but in realworld deployment use (.env.development and .env.production), see the .env.example
+        $ cat .env.example
+      ```
 
   - on root of electron app
   ```
