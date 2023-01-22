@@ -10,10 +10,10 @@
   <a href="https://github.com/facebook/react-native/blob/HEAD/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="React Native is released under the MIT license." />
   </a>
-  <a href="http://app.daruma-ball.surge.sh/">
-    <img src="https://img.shields.io/website?url=http%3A%2F%2Fapp.daruma-ball.surge.sh%2F" alt="Website" />
+  <a href="https://daruma-ball.web.app/">
+    <img src="https://img.shields.io/website?url=https://daruma-ball.web.app" alt="Website" />
   </a>
-  <a href="http://app.daruma-ball.surge.sh/">
+  <a href="https://daruma-ball.web.app/">
     <img src="https://img.shields.io/badge/supported%20platforms-macOS%2C%20windows-orange" alt="Website" />
   </a>
 </p>
@@ -22,7 +22,7 @@
 ### Our Goal : <span style='color: #ff7474'>Transform your to-do list into a done list</span>
 
 #### [Download Desktop app here](https://github.com/Alexon1999/daruma-ball/releases)
-#### [Website](http://app.daruma-ball.surge.sh)
+#### [Website](https://daruma-ball.web.app)
 
 # Screens
 ![](markdown/demo_splash.png)
@@ -53,7 +53,7 @@
     $ npm run start
 
     # production
-    # deploy your react app, and put the URL in src/index.js
+    # deploy your react app (some of free hosting services : surge and firebase), and put the URL in src/index.js
     $ npm run build
   ```
 

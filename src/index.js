@@ -29,7 +29,7 @@ const createWindow = () => {
     //mainWindow.loadFile(path.join(__dirname, "../build/index.html"));
 
     // deployed URL
-    mainWindow.loadURL("http://app.daruma-ball.surge.sh/");
+    mainWindow.loadURL("https://daruma-ball.web.app/");
   }
 };
 
