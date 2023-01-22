@@ -40,7 +40,7 @@
 
 ---
 
-#### Solution Description
+## Solution Description
 - We built an electron app with Electron Forge (is an all-in-one tool for packaging and distributing Electron applications)
   ```
     $ npx create-electron-app daruma-ball
