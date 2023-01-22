@@ -21,8 +21,15 @@
 
 ### Our Goal : <span style='color: #ff7474'>Transform your to-do list into a done list</span>
 
-#### [Download Desktop app here](https://github.com/Alexon1999/daruma-ball/releases)
-#### [Website](https://daruma-ball.web.app)
+<hr />
+
+#### 🚀 Available Here
+| Platform | App                                                                                                                           |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| macOS    | [daruma-ball-1.0.7-arm64.dmg](https://github.com/Alexon1999/daruma-ball/releases/download/v1.0.7/daruma-ball-1.0.7-arm64.dmg) |
+| windows  | [daruma-ball-1.0.7.Setup.exe](https://github.com/Alexon1999/daruma-ball/releases/download/v1.0.7/daruma-ball-1.0.7.Setup.exe) |
+| website  | [daruma-ball.web.app](https://daruma-ball.web.app)                                                                            |
+
 
 # Screens
 ![](markdown/demo_splash.png)
