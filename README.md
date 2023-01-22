@@ -30,6 +30,7 @@
 | windows  | [daruma-ball-1.0.7.Setup.exe](https://github.com/Alexon1999/daruma-ball/releases/download/v1.0.7/daruma-ball-1.0.7.Setup.exe) |
 | website  | [daruma-ball.web.app](https://daruma-ball.web.app)                                                                            |
 
+[See all desktop app releases](https://github.com/Alexon1999/daruma-ball/releases)
 
 # Screens
 ![](markdown/demo_splash.png)
