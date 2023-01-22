@@ -40,6 +40,10 @@
 
 ---
 
+## About the project
+
+Daruma Ball is an open-source project. The concept is to create a to-do list app that uses the traditional Japanese Daruma doll as a way to motivate users to complete their tasks.
+
 ## Solution Description
 - We built an electron app with Electron Forge (is an all-in-one tool for packaging and distributing Electron applications)
 - Plug the electron app with a React app
@@ -51,7 +55,7 @@ If you want to see how it's done, please refer to the [SETUP.md](SETUP.md)
 ## Contributing
 If you are interested in reporting/fixing issues and contributing directly to the code base, please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
 
-##### :bulb: If you have any suggestions for new features or improvements for the app, we would love to hear them [Click here](https://github.com/Alexon1999/daruma-ball/issues/1).
+##### :bulb: If you have any suggestions for new features or improvements for the app, we would love to hear them [Click here](https://github.com/Alexon1999/daruma-ball/discussions/3).
 
 
 ## Licence

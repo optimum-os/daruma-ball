@@ -11,7 +11,7 @@ Daruma Ball is an open-source project. The concept is to create a to-do list app
 ### How to Contribute
 - Check out our [issue tracker](https://github.com/Alexon1999/daruma-ball/issues) for open issues and feature requests.
 - Pick an issue that interests you and leave a comment expressing your interest in working on it.
-- Put your best [ideas here](https://github.com/Alexon1999/daruma-ball/issues/1), so we can implement it :)
+- Put your best [ideas here](https://github.com/Alexon1999/daruma-ball/discussions/3), so we can implement it :)
 - Setting up your local environment
   - Step 1: Fork
   - Step 2: Install dependencies and Build ([explained here in details](SETUP.md))
