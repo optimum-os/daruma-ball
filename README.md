@@ -32,7 +32,7 @@
 
 [See all desktop app releases](https://github.com/Alexon1999/daruma-ball/releases)
 
-# Screens
+## Screens
 ![](markdown/demo_splash.png)
 ![](markdown/demo_home.png)
 ![](markdown/demo_creation.png)
