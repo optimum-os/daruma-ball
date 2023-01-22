@@ -1,4 +1,4 @@
-<div style='display: flex; flex-direction:column; justify-content: center; align-items: center; '>
+<div align='center'>
   <h1 style='color: #ff7474;'>Daruma Ball</h1>
   <img src='markdown/daruma.png' width='150' height='150' />
 </div>
