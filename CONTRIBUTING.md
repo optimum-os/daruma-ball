@@ -2,7 +2,7 @@
 
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
-Daruma Ball is an open-source project that aims to build an app that can help people to transform their to-do list into a done list. It was totally inspired from the concept of Daruma Balls.
+Daruma Ball is an open-source project. The concept is to create a to-do list app that uses the traditional Japanese Daruma doll as a way to motivate users to complete their tasks.
 
 ### Why Contribute?
 - Learn new skills and technologies
