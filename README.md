@@ -30,6 +30,8 @@
 ![](markdown/demo_creation.png)
 ![](markdown/demo_list.png)
 
+---
+
 #### Solution Description
 - We built an electron app with Electron Forge (is an all-in-one tool for packaging and distributing Electron applications)
   ```
