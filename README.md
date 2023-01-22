@@ -7,13 +7,13 @@
 
 <!-- https://shields.io/ -->
 <p align="center">
-  <a href="https://github.com/facebook/react-native/blob/HEAD/LICENSE">
+  <a href="https://github.com/Alexon1999/daruma-ball/blob/master/LICENCE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="React Native is released under the MIT license." />
   </a>
-  <a href="https://daruma-ball.web.app/">
+  <a href="https://daruma-ball.web.app/" target='_blank'>
     <img src="https://img.shields.io/website?url=https://daruma-ball.web.app" alt="Website" />
   </a>
-  <a href="https://daruma-ball.web.app/">
+  <a href="https://github.com/Alexon1999/daruma-ball/releases">
     <img src="https://img.shields.io/badge/supported%20platforms-macOS%2C%20windows-orange" alt="Website" />
   </a>
 </p>
