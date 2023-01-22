@@ -42,50 +42,16 @@
 
 ## Solution Description
 - We built an electron app with Electron Forge (is an all-in-one tool for packaging and distributing Electron applications)
-  ```
-    $ npx create-electron-app daruma-ball
-  ```
 - Plug the electron app with a React app
-  - on React app
-    ```
-    $ cd app
-    $ npm install
-    ```
+- Release the app on github using Electron Forge Publisher
 
-    - We Also use [Supabase](https://supabase.com/) for their Database and Authentication service.
-      - create your own supabase project
-      - On the production, add your SITE URL in Authentication -> URL Configiration -> Site URL and Redirect URLs
-      - add SUPABASE_URL and SUPABASE_KEY in SUPABASE_KEY in the Environment file
-      ```
-        # create two environment files to seperate environments (.env.development.local and .env.production.local) but in realworld deployment use (.env.development and .env.production), see the .env.example
-        $ cat .env.example
-      ```
+If you want to see how it's done, please refer to the [SETUP.md](SETUP.md)
 
-  - on root of electron app
-  ```
-    # development
-    $ npm run start
+## Contributing
+If you are interested in reporting/fixing issues and contributing directly to the code base, please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
 
-    # production
-    # deploy your react app (some of free hosting services : surge and firebase), and put the URL in src/index.js
-    $ npm run build
-  ```
+If you have any suggestions for new features or improvements for the app, we would love to hear them.[Click here](https://github.com/Alexon1999/daruma-ball/issues/1).
 
-- Release app
-  - **on Github**
-    - change the version on package.json, commit and push it. each release is attached to a commit.
-  ```
-  # create a release github repo
-  $ npm run publish
-  ```
-    - releases will be available [here](https://github.com/Alexon1999/daruma-ball/releases)
-    - select a release and publish it.
+## Licence
 
-### Source
-- [Electron Forge Getting Started](https://www.electronforge.io/)
-- [Configure Electron Forge](https://www.electronforge.io/configuration)
-- [Packaging Electron app with Electron Forge](https://www.electronjs.org/docs/latest/tutorial/tutorial-packaging)
-- [Code Signing](https://www.electronforge.io/guides/code-signing)
-- [Github publisher](https://www.electronforge.io/config/publishers/github)
-- [Database and Authentication with Supabase](https://github.com/supabase/examples-archive/tree/76e8b276f7fb58ba65b265a16678e9c72c23a72f/supabase-js-v1/todo-list/react-todo-list)
-- [Environment Variable Create-React-APP](https://create-react-app.dev/docs/adding-custom-environment-variables/)
+[MIT](LICENCE)
