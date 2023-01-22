@@ -4,26 +4,70 @@
 
 Daruma Ball is an open-source project. The concept is to create a to-do list app that uses the traditional Japanese Daruma doll as a way to motivate users to complete their tasks.
 
-### Why Contribute?
+## Why Contribute?
 - Learn new skills and technologies
 - Make an impact and see your contributions being used by others
 
-### How to Contribute
+## How to Contribute
+
+### Issue Reporting Guidelines
+
+Please search for similar issues before opening an issue and always follow the [issue template](markdown/ISSUE_TEMPLATE/).
+
 - Check out our [issue tracker](https://github.com/Alexon1999/daruma-ball/issues) for open issues and feature requests.
-- Pick an issue that interests you and leave a comment expressing your interest in working on it.
-- Put your best [ideas here](https://github.com/Alexon1999/daruma-ball/discussions/3), so we can implement it :)
-- Setting up your local environment
-  - Step 1: Fork
-  - Step 2: Install dependencies and Build ([explained here in details](SETUP.md))
-  - Step 3: Create a branch
-  - Step 4: Make Changes & Commit
-  - Step 5: Push
-- Submit a pull request and our team will review your changes.
+
+Please review the following Pull Request guidelines before making your own PR.
+
+### Pull Request Guidelines
+
+**In *all* Pull Requests:** provide a title, a detailed description of the problem, as well as a demonstration with screen recordings and/or screenshots.
+
+Please make sure the following is done before submitting a PR:
+
+- Submit PRs directly to the `develop` branch.
+- Reference the related issue in the PR comment.
+
+If you add new feature:
+
+- Open a suggestion issue first.
+- Provide your reasoning on why you want to add this feature.
+- Submit your PR.
+
+If you fix a bug:
+
+- If you are resolving a special issue, please add `fix: #<issue number> <short message>` in your PR title (e.g.`fix: #3899 update entities encoding/decoding`).
+- Provide a detailed description of the bug in your PR and/or link to the issue.
+
+### Where should I start?
+
+A good way to start is to find an [issue](https://github.com/Alexon1999/daruma-ball/issues) labeled as `bug`, `help wanted` or `feature request`. The `good first issue` issues are good for newcomers. Please discuss the solution for larger issues first and after the final solution is approved by the Daruma Ball members, you can submit/work on the PR. For small changes you can directly open a PR.
+
+
+## Quick start
+
+1. Fork the repository.
+2. Clone your fork: `git clone git@github.com:<username>/daruma-ball.git`
+3. Setting up your local environment ([explained here in details](DOCUMENTATION.md))
+4. Create a feature branch: `git checkout -b feature`
+5. Make your changes and push your branch.
+6. Create a PR against `develop` and describe your changes by adding a title and a description to your PR.
+
+**Rebase your PR:**
+
+If there are conflicts or you want to update your local branch, please do the following:
+
+1. `git fetch upstream`
+2. `git rebase upstream/develop`
+3. Please [resolve](https://help.github.com/articles/resolving-merge-conflicts-after-a-git-rebase/) all conflicts and force push your feature branch: `git push -f`
 
 ### Guidelines
 - Follow the project's code style and conventions.
 - Write clear and concise commit messages.
 - All contributions will be acknowledged and appreciated.
+
+## Developer Documentation
+
+Please [click here](docs/dev/README.md) for more details.
 
 ### Communication
 <!-- - Join our [Slack](https://yourproject.slack.com) or [Discord](https://discord.gg/yourproject) community to stay updated on the project and collaborate with other contributors. -->

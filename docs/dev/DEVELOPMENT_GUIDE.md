@@ -1,11 +1,19 @@
-## Setup
+# DEVELOPMENT GUIDE
+
+### Prerequisites
+Before you can get started developing, you need set up your development environment:
+
+- node
+
+
+### Installation instructions
 
 - We built an electron app with Electron Forge (is an all-in-one tool for packaging and distributing Electron applications)
   ```
     $ npx create-electron-app daruma-ball
   ```
 - Plug the electron app with a React app
-  - on React app
+  - on React app ([/app](../../app))
     ```
     $ cd app
     $ npm install
@@ -15,31 +23,43 @@
       - create your own supabase project
       - On the production, add your SITE URL in Authentication -> URL Configiration -> Site URL and Redirect URLs
       - add SUPABASE_URL and SUPABASE_KEY in SUPABASE_KEY in the Environment file
-      ```
-        # create two environment files to seperate environments (.env.development.local and .env.production.local) but in realworld deployment use (.env.development and .env.production), see the .env.example
-        $ cat .env.example
-      ```
+        - create two environment files to seperate environments (.env.development.local and .env.production.local) but in realworld deployment use (.env.development and .env.production), see the .env.example
+        ```
+          $ cat .env.example
+        ```
 
   - on root of electron app
   ```
-    # development
     $ npm run start
-
-    # production
-    # deploy your react app (some of free hosting services : surge and firebase), and put the URL in src/index.js
-    $ npm run build
   ```
+
+### Build instructions
+how to compile the source code and create the executable or binary files
+
+- Iy you want to get an executable of your application, in development
+  ``` $ npm run build ```
+
+### Deployment instructions
+
+-  deploy your react app (some of free hosting services like surge and firebase)
+  
+-  put the URL in src/index.js
+
+- build the app to see the integration is done correctly
+  ```npm run build```
 
 - Release app
   - **on Github**
     - change the version on package.json, commit and push it. each release is attached to a commit.
-  ```
-  # create a release github repo
-  $ npm run publish
-  ```
-    - releases will be available [here](https://github.com/Alexon1999/daruma-ball/releases)
-    - select a release and publish it.
+    - create a release in the github repo
+      ```
+        $ npm run publish
+      ```
+  - releases will be available [here](https://github.com/Alexon1999/daruma-ball/releases)
+  - select a release and publish it.
 
+
+---
 
 ### Source
 - [Electron Forge Getting Started](https://www.electronforge.io/)

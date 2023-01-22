@@ -1,6 +1,6 @@
 <div align='center'>
   <h1 style='color: #ff7474;'>Daruma Ball</h1>
-  <img src='markdown/daruma.png' width='150' height='150' />
+  <img src='markdown/assets/daruma.png' width='150' height='150' />
 </div>
 
 <br />
@@ -32,11 +32,14 @@
 
 [See all desktop app releases](https://github.com/Alexon1999/daruma-ball/releases)
 
+Want to see new features of the latest version? Please refer to [CHANGELOG](.github/CHANGELOG.md).
+
+
 ## Screens
-![](markdown/demo_splash.png)
-![](markdown/demo_home.png)
-![](markdown/demo_creation.png)
-![](markdown/demo_list.png)
+![](markdown/assets/demo_splash.png)
+![](markdown/assets/demo_home.png)
+![](markdown/assets/demo_creation.png)
+![](markdown/assets/demo_list.png)
 
 ---
 
@@ -49,7 +52,7 @@ Daruma Ball is an open-source project. The concept is to create a to-do list app
 - Plug the electron app with a React app
 - Release the app on github using Electron Forge Publisher
 
-If you want to see how it's done, please refer to the [SETUP.md](SETUP.md)
+If you want to see how it's done, please refer to the [Documentation](docs/dev/README.md)
 
 
 ## Contributing
