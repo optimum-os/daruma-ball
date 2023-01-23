@@ -15,3 +15,6 @@ You could also implement a CI/CD pipeline to automatically build and deploy the 
 - Protecting the `master` branch ensures that only authorized contributors can make changes to it and prevent accidental or malicious changes to the stable release version of the project.
 - Protecting the `develop` branch ensures that all changes are reviewed and approved by a maintainer before they are merged.
 - You can use branch protection rules to automatically enforce specific policies, such as requiring a minimum number of code review approvals, or requiring that tests pass before a pull request can be merged.
+
+
+### Inspired From [marktext](https://github.com/marktext/marktext)
