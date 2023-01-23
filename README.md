@@ -64,3 +64,5 @@ If you are interested in reporting/fixing issues and contributing directly to th
 ## Licence
 
 [MIT](LICENCE)
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAlexon1999%2Fdaruma-ball.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FAlexon1999%2Fdaruma-ball?ref=badge_large)
