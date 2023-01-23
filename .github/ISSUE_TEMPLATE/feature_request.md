@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Suggest an idea for MarkText
+about: Suggest an idea for Daruma Ball
 title: ''
 labels: feature request
 assignees: ''

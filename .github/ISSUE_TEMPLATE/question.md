@@ -1,6 +1,6 @@
 ---
 name: Question
-about: Ask a question about MarkText
+about: Ask a question about Daruma Ball
 title: ''
 labels: question
 assignees: ''
