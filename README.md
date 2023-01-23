@@ -7,7 +7,7 @@
 
 <!-- https://shields.io/ -->
 <p align="center">
-  <a href="https://github.com/Alexon1999/daruma-ball/blob/master/LICENCE">
+  <a href="https://github.com/Alexon1999/daruma-ball/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="React Native is released under the MIT license." />
   </a>
   <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FAlexon1999%2Fdaruma-ball?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FAlexon1999%2Fdaruma-ball.svg?type=shield"/></a>
@@ -62,8 +62,8 @@ If you are interested in reporting/fixing issues and contributing directly to th
 ##### :bulb: If you have any suggestions for new features or improvements for the app, we would love to hear them [Click here](https://github.com/Alexon1999/daruma-ball/discussions/3).
 
 
-## Licence
+## License
 
-[MIT](LICENCE)
+[MIT](LICENSE)
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAlexon1999%2Fdaruma-ball.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FAlexon1999%2Fdaruma-ball?ref=badge_large)
