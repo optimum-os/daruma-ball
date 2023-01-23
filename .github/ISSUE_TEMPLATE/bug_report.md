@@ -40,5 +40,5 @@ assignees: ''
 
 ### Versions
 
-- MarkText version:
+- Daruma Ball version:
 - Operating system:
