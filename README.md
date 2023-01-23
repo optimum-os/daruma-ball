@@ -13,11 +13,15 @@
   <a href="https://daruma-ball.web.app/">
     <img src="https://img.shields.io/website?url=https://daruma-ball.web.app" alt="Website" />
   </a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2FAlexon1999%2Fdaruma-ball?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FAlexon1999%2Fdaruma-ball.svg?type=shield"/></a>
   <a href="https://github.com/Alexon1999/daruma-ball/releases">
     <img src="https://img.shields.io/badge/supported%20platforms-macOS%2C%20windows-orange" alt="releases" />
   </a>
 </p>
 
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAlexon1999%2Fdaruma-ball.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FAlexon1999%2Fdaruma-ball?ref=badge_large)
 
 ### Our Goal : <span style='color: #ff7474'>Transform your to-do list into a done list</span>
 
