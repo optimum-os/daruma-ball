@@ -4,7 +4,19 @@
 
 Daruma Ball is an open-source project. The concept is to create a to-do list app that uses the traditional Japanese Daruma doll as a way to motivate users to complete their tasks.
 
-## Why Contribute?
+Before submitting your contribution, please make sure to take a moment and read through the following guidelines.
+
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Why Contribute ?](#why-contribute)
+- [How to Contribute](#how-to-contribute)
+  - [Issue reporting guidelines](#issue-reporting-guidelines)
+  - [Pull request guidelines](#pull-request-guidelines)
+    - [Where should I start?](#where-should-i-start)
+- [Quick start](#quick-start)
+- [Developer documentation](#developer-documentation)
+- [Communication](#communication)
+
+## Why Contribute ?
 - Learn new skills and technologies
 - Make an impact and see your contributions being used by others
 
@@ -38,7 +50,7 @@ If you fix a bug:
 - If you are resolving a special issue, please add `fix: #<issue number> <short message>` in your PR title (e.g.`fix: #3899 update entities encoding/decoding`).
 - Provide a detailed description of the bug in your PR and/or link to the issue.
 
-### Where should I start?
+#### Where should I start?
 
 A good way to start is to find an [issue](https://github.com/Alexon1999/daruma-ball/issues) labeled as `bug`, `help wanted` or `feature request`. The `good first issue` issues are good for newcomers. Please discuss the solution for larger issues first and after the final solution is approved by the Daruma Ball members, you can submit/work on the PR. For small changes you can directly open a PR.
 
@@ -60,17 +72,10 @@ If there are conflicts or you want to update your local branch, please do the fo
 2. `git rebase upstream/develop`
 3. Please [resolve](https://help.github.com/articles/resolving-merge-conflicts-after-a-git-rebase/) all conflicts and force push your feature branch: `git push -f`
 
-### Guidelines
-- Follow the project's code style and conventions.
-- Write clear and concise commit messages.
-- All contributions will be acknowledged and appreciated.
-
 ## Developer Documentation
 
 Please [click here](docs/dev/README.md) for more details.
 
-### Communication
-<!-- - Join our [Slack](https://yourproject.slack.com) or [Discord](https://discord.gg/yourproject) community to stay updated on the project and collaborate with other contributors. -->
+## Communication
+- You can talk in [Discussions](https://yourproject.slack.com) to stay updated on the project and collaborate with other contributors. 
 - You can also reach us via email at alexon.uthayakumar@gmail.com.
-
-We look forward to working with you!
