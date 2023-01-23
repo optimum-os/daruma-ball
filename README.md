@@ -10,6 +10,7 @@
   <a href="https://github.com/Alexon1999/daruma-ball/blob/master/LICENCE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="React Native is released under the MIT license." />
   </a>
+  <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FAlexon1999%2Fdaruma-ball?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FAlexon1999%2Fdaruma-ball.svg?type=shield"/></a>
   <a href="https://daruma-ball.web.app/">
     <img src="https://img.shields.io/website?url=https://daruma-ball.web.app" alt="Website" />
   </a>
