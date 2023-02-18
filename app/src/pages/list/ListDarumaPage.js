@@ -60,7 +60,7 @@ function ListDarumaPage() {
 
   useEffect(() => {
     fetchDaruma();
-  }, [fetchDaruma, finishedDaruma, notFinishedDaruma]);
+  }, [fetchDaruma]);
 
   if (!user) {
     return (
@@ -148,7 +148,7 @@ function ListDarumaPage() {
               </p>
             </div>
           )
-        ) : (
+        ) : finishedDaruma.length > 0 ? (
           finishedDaruma.map((daruma) => (
             <DarumaCard
               key={daruma.id}
@@ -161,10 +161,24 @@ function ListDarumaPage() {
               isFinished={daruma.is_finished}
               activeLeftPupil={daruma.active_left_pupil}
               activeRightPupil={daruma.active_right_pupil}
+              finishedDaruma={finishedDaruma}
+              notFinishedDaruma={notFinishedDaruma}
               setNotFinishedDaruma={setNotFinishedDaruma}
               setFinishedDaruma={setFinishedDaruma}
             />
           ))
+        ) : (
+          <div>
+            <img
+              src={undraw_adventure_map_hnin}
+              alt='adventure'
+              width='300'
+              height='300'
+            />
+            <p className='mt-8 font-bold '>
+              Vous n'avez aucun Daruma terminé ...
+            </p>
+          </div>
         )}
       </Box>
       <ThemeProvider theme={defaultTheme}>

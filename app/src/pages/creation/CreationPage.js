@@ -146,9 +146,7 @@ function CreationPage() {
         active_left_pupil: activeLeftPupil,
         active_right_pupil: activeRightPupil,
       };
-      //console.log(daruma);
 
-      // TODO: Enregistrer
       const { data: darumaSaved, error } = await supabase
         .from("daruma")
         .insert({ ...daruma, user_id: user.id })
