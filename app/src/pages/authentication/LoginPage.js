@@ -36,8 +36,6 @@ function LoginPage() {
       password,
     });
 
-    console.log(res);
-
     if (res.error) {
       toast.error(res.error.message);
     } else {

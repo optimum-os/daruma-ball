@@ -32,6 +32,8 @@ function DarumaCard({
   typeDaruma = "chance",
   activeLeftPupil = true,
   activeRightPupil = true,
+  finishedDaruma,
+  notFinishedDaruma,
   setNotFinishedDaruma,
   setFinishedDaruma,
 }) {
@@ -101,6 +103,8 @@ function DarumaCard({
               id={id}
               userId={userId}
               isFinished={isFinished}
+              finishedDaruma={finishedDaruma}
+              notFinishedDaruma={notFinishedDaruma}
               setNotFinishedDaruma={setNotFinishedDaruma}
               setFinishedDaruma={setFinishedDaruma}
             />
@@ -115,6 +119,8 @@ function IconMenu({
   id,
   userId,
   isFinished,
+  finishedDaruma,
+  notFinishedDaruma,
   setNotFinishedDaruma,
   setFinishedDaruma,
 }) {
@@ -132,7 +138,16 @@ function IconMenu({
         .eq("id", id);
 
       if (!error) {
-        setFinishedDaruma((prev) => prev.filter((daruma) => daruma.id !== id));
+        setNotFinishedDaruma((prev) =>
+          prev.filter((daruma) => daruma.id !== id)
+        );
+        const { data, error } = await supabase
+          .from("daruma")
+          .select()
+          .eq("id", id)
+          .single();
+
+        setFinishedDaruma((prev) => [...prev, data]);
       }
     }
   };
@@ -143,6 +158,14 @@ function IconMenu({
         .from("daruma")
         .delete()
         .eq("id", id);
+
+      if (isFinished) {
+        setFinishedDaruma((prev) => prev.filter((daruma) => daruma.id !== id));
+      } else {
+        setNotFinishedDaruma((prev) =>
+          prev.filter((daruma) => daruma.id !== id)
+        );
+      }
     }
   };
 
